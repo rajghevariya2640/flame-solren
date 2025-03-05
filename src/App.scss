@@ -1,0 +1,52 @@
+$poppins: "Poppins", sans-serif;
+$primary: #3a9357;
+$white: #fff;
+$black: #000;
+$transition: all 0.2s ease-in-out;
+
+$theme-colors: (
+  primary: $primary,
+);
+@import "bootstrap/scss/bootstrap.scss";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  object-fit: contain;
+}
+
+svg{
+  vertical-align: sub;
+}
+
+
+
+// Header Style
+header{
+  .upper-header{
+    background-color: $primary;
+    padding: 10px 0;
+    .social-icon{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}
